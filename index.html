@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maya Riveral — Portfolio</title>
+  <style>
+    :root{
+      --bg:#ffffff; --text:#0f172a; --muted:#475569;
+      --border:#e2e8f0; --accent:#111827; --link:#0f172a;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family: Georgia, 'Times New Roman', serif; background:var(--bg); color:var(--text); line-height:1.65}
+    header{max-width:960px; margin:40px auto 16px; padding:0 20px}
+    h1{font-size:38px; margin:0}
+    .tagline{color:var(--muted); margin-top:6px}
+    nav{border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
+    nav .wrap{max-width:960px; margin:0 auto; padding:10px 20px; display:flex; gap:16px; flex-wrap:wrap}
+    nav a{color:var(--link); text-decoration:none; font-weight:600}
+    main{max-width:960px; margin:20px auto 40px; padding:0 20px}
+    section{padding:18px 0; border-bottom:1px solid var(--border)}
+    h2{font-size:22px; margin:0 0 10px}
+    .row{display:grid; grid-template-columns: 140px 1fr; gap:18px; align-items:start}
+    .avatar{width:120px; height:120px; border-radius:4px; object-fit:cover; border:1px solid var(--border)}
+    .projects{display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));}
+    .card{border:1px solid var(--border); padding:12px; border-radius:6px}
+    .card img{width:100%; height:auto; border-radius:4px; margin-bottom:8px}
+    ul{margin:0; padding-left:18px}
+    footer{max-width:960px; margin:24px auto; padding:0 20px; color:var(--muted); text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maya Riveral</h1>
+    <div class="tagline">Computer Science Student | AI & Cybersecurity Enthusiast | Python • ML • Threat Modeling</div>
+  </header>
+
+  <nav><div class="wrap">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </div></nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <div class="row">
+        <img class="avatar" src="headshot.jpg" alt="Headshot of Maya Riveral">
+        <p>I’m a junior Computer Science student interested in building secure, explainable machine learning systems. I’ve worked on class projects that apply lightweight ML to anomaly detection and on a lab project that used threat models to harden an IoT prototype. I’m learning practical engineering tools (Python, scikit-learn, Docker) and I’m looking for research internships or applied ML roles for next summer.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="card">
+  <img src="project_1.jpg" alt="IoT Anomaly Detection (Course Project) thumbnail">
+  <h3>IoT Anomaly Detection (Course Project)</h3>
+  <p>Built a TinyML pipeline on Raspberry Pi to classify sensor anomalies; achieved 87% accuracy and measured energy-per-inference.</p>
+</div>
+<div class="card">
+  <img src="project_2.jpg" alt="Secure Chat Application (Independent Project) thumbnail">
+  <h3>Secure Chat Application (Independent Project)</h3>
+  <p>Developed an end-to-end encrypted messaging app with AES-256 and SHA-256; deployed prototype on Heroku with React + Node.js.</p>
+</div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+  <h3>Volunteer Web Developer — Tech Mahindra</h3>
+  <p><em>Jan 2025 - Present</em><br>Implemented front-end components for a nonprofit site and integrated a contact form; improved mobile load time by 35% using lazy-loading and image optimization.</p>
+</div>
+<div class="card">
+  <h3>Research Assistant — Network Intrusion Baselines — OpenField</h3>
+  <p><em>Jun 2024 - Aug 2024</em><br>Cleaned and labeled 200k+ netflow records; automated model training and evaluation pipeline and prepared results for the campus symposium poster. Tools: Python, pandas, scikit-learn, Docker.</p>
+</div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p>B.S. Computer Science — York College, Expected 2026</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+<li>Python</li>
+<li>JavaScript</li>
+<li>Machine Learning</li>
+<li>SQL</li>
+</ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:maya@email.com">maya@email.com</a> · <a href="https://www.linkedin.com/in/maya-riveral/" target="_blank" rel="noopener">LinkedIn</a></p>
+      
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Maya Riveral — Theme: Classic</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
